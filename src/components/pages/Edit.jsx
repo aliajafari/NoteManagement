@@ -68,7 +68,6 @@ class Edit extends Component {
     }
 }
 
-
 Edit.propTypes = {
     updateNote: PropTypes.object,
     history: PropTypes.object,
@@ -85,6 +84,5 @@ const mapStateToProps = (state, ownProps) => {
 const mapDispatchToProps = dispatch => ({
     updateNote: (id, title, description) => dispatch(updateNote(id, title, description))
 })
-
 
 export default connect(mapStateToProps, mapDispatchToProps)(Edit);

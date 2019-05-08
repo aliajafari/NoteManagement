@@ -7,6 +7,7 @@ const Item = (props) => {
     const onClickDeleteItem = event => {
         props.deleteNote(event.currentTarget.dataset.id);
     }
+    
     return (
         <li className='column'>
             <div>

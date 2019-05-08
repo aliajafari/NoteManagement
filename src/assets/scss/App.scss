@@ -3,6 +3,7 @@
 @import "partials/mixins.scss";
 @import "partials/grid.scss";
 @import "partials/form.scss";
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 
 body,
 html {
@@ -42,6 +43,15 @@ a {
   background-color: white;
   max-width: 980px;
   min-width: 320px;
+}
+
+.top-menu {
+  float: right;
+  li {
+    font-weight: bold;
+    display: inline-block;
+    margin: 0 10px;
+  }
 }
 
 header {
@@ -157,7 +167,11 @@ footer {
   font-size: 15px;
   line-height: 17px;
   @include transition(0.3s);
+  color: white;
   &.green {
+    a {
+      color: white;
+    }
     background: $green-color;
     color: white;
     &:hover {
@@ -165,6 +179,9 @@ footer {
     }
   }
   &.red {
+    a {
+      color: white;
+    }
     background: $red-color;
     color: white;
     &:hover {
