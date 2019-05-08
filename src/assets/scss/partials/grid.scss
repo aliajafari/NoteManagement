@@ -1,0 +1,43 @@
+
+.row { 
+  display:flex;
+  flex-wrap: wrap;
+}
+
+.column {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 1;
+  width: 100%;
+}
+
+.col-1 {
+  max-width: calc(100% / 12);
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.col-2 {
+  max-width: calc(100% / 12 * 2);
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.col-3 {
+  max-width: calc(100% / 12 * 3);
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.col-4 {
+  max-width: calc(100% / 12 * 4);
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.col-5 {
+  max-width: calc(100% / 12 * 5);
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.col-6 {
+  max-width: calc(100% / 2);
+  padding-left: 15px;
+  padding-right: 15px;
+}

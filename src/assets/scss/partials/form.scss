@@ -1,0 +1,32 @@
+.form-container {
+    .row {
+        margin-bottom: 20px;
+    }
+    label {
+        font-weight: bold;
+        display: block;
+    }
+    input,textarea {
+        font-family: $font-family;
+        width: 100%;
+        display: block;
+        padding: 10px;
+        @include transition(0.3s);
+        border-radius: 5px;
+        border: 1px solid #e3e3e3;
+        outline: none;
+        &:focus {
+            border: 1px solid darken(#e3e3e3,20%);
+        }
+    }
+    textarea {
+        resize: none;
+    }
+}
+
+button {
+    font-family: $font-family;
+    background: transparent;
+    border: none;
+    outline: none;
+}
