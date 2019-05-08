@@ -1,7 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, BrowserRouter } from "react-router-dom";
 import './assets/scss/App.scss';
-
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';
 import reducer from './reducers';

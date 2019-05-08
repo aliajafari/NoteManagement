@@ -12,7 +12,6 @@ class Create extends Component {
             error:false
         };
     }
-
     onChangeInputs = event => {
         let name = event.target.name;
         let value = event.target.value;
@@ -20,7 +19,6 @@ class Create extends Component {
             [name]: value
         })
     }
-
     onClickSubmit = () => {
         const { title, description } = this.state;
         if(title !== '') {
@@ -31,13 +29,8 @@ class Create extends Component {
             this.setState({
                 error:true
             })
-        }
-        
-
-        
+        }        
     }
-
-
     render() {
         return (
             <React.Fragment>
@@ -63,7 +56,6 @@ class Create extends Component {
         )
     }
 }
-
 
 Create.propTypes = {
     addNote: PropTypes.func,
